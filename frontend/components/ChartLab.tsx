@@ -13,7 +13,7 @@ const Plot = dynamic(() => import('react-plotly.js'), {
             <div className="animate-pulse text-gray-400">Loading chart...</div>
         </div>
     )
-});
+}) as any;
 
 interface ChartLabProps {
     charts: ChartData[];
@@ -319,8 +319,8 @@ export default function ChartLab({ charts }: ChartLabProps) {
                                 whileTap={{ scale: 0.98 }}
                                 onClick={() => setActiveChart(index)}
                                 className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm whitespace-nowrap transition-all ${activeChart === index
-                                        ? 'bg-gradient-to-r from-neon-cyan/20 to-neon-magenta/20 text-white border border-neon-cyan/50 shadow-lg shadow-neon-cyan/10'
-                                        : 'bg-dark-700 text-gray-400 hover:text-white border border-transparent hover:border-dark-500'
+                                    ? 'bg-gradient-to-r from-neon-cyan/20 to-neon-magenta/20 text-white border border-neon-cyan/50 shadow-lg shadow-neon-cyan/10'
+                                    : 'bg-dark-700 text-gray-400 hover:text-white border border-transparent hover:border-dark-500'
                                     }`}
                             >
                                 <span className={getChartColor(chart.type)}>
@@ -422,8 +422,8 @@ export default function ChartLab({ charts }: ChartLabProps) {
                             key={index}
                             onClick={() => setActiveChart(index)}
                             className={`h-2 rounded-full transition-all duration-300 ${activeChart === index
-                                    ? 'bg-gradient-to-r from-neon-cyan to-neon-magenta w-8'
-                                    : 'bg-dark-500 hover:bg-dark-400 w-2'
+                                ? 'bg-gradient-to-r from-neon-cyan to-neon-magenta w-8'
+                                : 'bg-dark-500 hover:bg-dark-400 w-2'
                                 }`}
                         />
                     ))}
