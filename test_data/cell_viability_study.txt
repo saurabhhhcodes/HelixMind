@@ -1,0 +1,42 @@
+Cell Viability Assay Results - Drug A Treatment Study
+======================================================
+
+Experiment Date: February 2026
+Cell Line: HeLa (Human cervical cancer)
+Treatment: Novel kinase inhibitor (Drug A)
+
+METHODOLOGY
+-----------
+Cells were seeded at 5,000 cells/well in 96-well plates and allowed to 
+adhere overnight. Drug A was administered at concentrations ranging from 
+0.1 µM to 100 µM. Cell viability was assessed using MTT assay after 48 hours.
+
+RESULTS
+-------
+| Concentration (µM) | Cell Viability (%) | Std Dev |
+|--------------------|-------------------|---------|
+| 0 (Control)        | 100.0             | 3.2     |
+| 0.1                | 98.7              | 4.1     |
+| 1.0                | 92.3              | 5.6     |
+| 5.0                | 78.4              | 6.2     |
+| 10.0               | 54.2              | 7.8     |
+| 25.0               | 32.1              | 5.4     |
+| 50.0               | 18.7              | 4.2     |
+| 100.0              | 8.3               | 2.9     |
+
+IC50 CALCULATION
+----------------
+The calculated IC50 value for Drug A is approximately 12.4 µM in HeLa cells.
+
+OBSERVATIONS
+------------
+1. Drug A shows dose-dependent cytotoxicity
+2. Significant cell death observed at concentrations > 10 µM
+3. Morphological changes (cell rounding, detachment) visible at 25 µM and above
+4. No significant toxicity at sub-micromolar concentrations
+
+NEXT STEPS
+----------
+- Repeat experiment with MCF-7 (breast cancer) cell line
+- Perform apoptosis assay to confirm mechanism of cell death
+- Analyze expression of pro-apoptotic genes (TP53, BAX, PUMA)

@@ -1,0 +1,30 @@
+{
+    "name": "helix-mind",
+    "version": "1.0.0",
+    "description": "Autonomous Bio-Research Agent powered by Gemini 3",
+    "private": true,
+    "workspaces": [
+        "frontend"
+    ],
+    "scripts": {
+        "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+        "dev:backend": "cd backend && uvicorn main:app --reload",
+        "dev:frontend": "cd frontend && npm run dev",
+        "build": "cd frontend && npm run build",
+        "start": "cd frontend && npm run start",
+        "install:all": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "keywords": [
+        "gemini-3",
+        "ai",
+        "research",
+        "biotech",
+        "multimodal",
+        "hackathon"
+    ],
+    "author": "Helix Mind Team",
+    "license": "MIT"
+}

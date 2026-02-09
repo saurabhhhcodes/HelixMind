@@ -1,0 +1,46 @@
+[
+  {
+    "id": "9495bb4f-f2df-487e-8244-e01f4311a7e7",
+    "content": {
+      "query": "test",
+      "result": "## Analysis Complete\n\nBased on my analysis of your query: **\"test...\"**\n\n### Key Findings\n\n1. **Pattern Recognition**: I've identified several significant patterns in the provided data that warrant further investigation.\n\n2. **Molecular Insights**: The structural analysis suggests potential binding sites that could be relevant for drug targeting.\n\n3. **Recommended Next Steps**:\n   - Conduct further spectroscopic analysis\n   - Cross-validate with existing literature\n   - Consider computational modeling for structure prediction\n\n```chart\n{\n  \"type\": \"bar\",\n  \"title\": \"Confidence Scores by Analysis Category\",\n  \"data\": {\n    \"labels\": [\"Structure\", \"Function\", \"Interaction\", \"Stability\"],\n    \"values\": [0.89, 0.76, 0.82, 0.71]\n  },\n  \"insights\": \"Structure prediction shows highest confidence.\"\n}\n```\n\n### Memory Integration\nI've stored this analysis in your session memory for future reference. Your research trajectory shows consistent focus on molecular structure analysis.\n",
+      "files": [],
+      "timestamp": "2026-02-08T19:26:55.191724"
+    },
+    "timestamp": "2026-02-08T19:26:55.191973",
+    "embedding": [
+      0.8549019607843137,
+      0.5254901960784314,
+      0.26666666666666666,
+      0.011764705882352941,
+      0.6705882352941176,
+      0.11372549019607843,
+      0.9294117647058824,
+      0.054901960784313725,
+      0.8313725490196079,
+      0.24313725490196078,
+      0.4627450980392157,
+      0.7647058823529411,
+      0.8313725490196079,
+      0.08235294117647059,
+      0.788235294117647,
+      0.3411764705882353,
+      0.2549019607843137,
+      0.43529411764705883,
+      0.8274509803921568,
+      0.9333333333333333,
+      0.9686274509803922,
+      0.19215686274509805,
+      0.9490196078431372,
+      0.07058823529411765,
+      0.3254901960784314,
+      0.30196078431372547,
+      0.40784313725490196,
+      0.4235294117647059,
+      0.3764705882352941,
+      0.8941176470588236,
+      0.5607843137254902,
+      0.0784313725490196
+    ]
+  }
+]

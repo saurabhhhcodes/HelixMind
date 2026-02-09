@@ -1,0 +1,29 @@
+services:
+  # Helix Mind Backend (FastAPI + Python)
+  - type: web
+    name: helix-mind-backend
+    env: python
+    root: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false # User must provide this in dashboard
+      - key: PYTHON_VERSION
+        value: 3.11.9
+
+  # Helix Mind Frontend (Next.js + Node)
+  - type: web
+    name: helix-mind-frontend
+    env: node
+    root: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: helix-mind-backend
+          property: url
+      - key: NODE_VERSION
+        value: 20.11.0
