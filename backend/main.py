@@ -432,6 +432,15 @@ async def vector_search(query: str, limit: int = 5):
     }
 
 
+# Serve Static Frontend
+from fastapi.staticfiles import StaticFiles
+
+# Ensure static directory exists
+os.makedirs("static", exist_ok=True)
+
+# Mount static files (HTML=True allows serving index.html on /)
+app.mount("/", StaticFiles(directory="static", html=True), name="static")
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(
