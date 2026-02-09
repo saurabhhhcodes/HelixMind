@@ -16,6 +16,7 @@ npm run build
 echo "🚚 Moving Static Files to Backend..."
 cd ..
 rm -rf backend/static/*
+mkdir -p backend/static
 cp -r frontend/out/* backend/static/
 
 echo "✅ Build Complete!"
