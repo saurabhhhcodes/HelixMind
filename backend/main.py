@@ -112,7 +112,7 @@ class MemoryItem(BaseModel):
 
 # ============== API Endpoints ==============
 
-@app.get("/")
+@app.get("/health")
 async def root():
     """Health check endpoint."""
     return {
