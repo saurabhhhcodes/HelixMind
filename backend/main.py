@@ -63,7 +63,8 @@ app = FastAPI(
     title="Helix Mind API",
     description="Autonomous Bio-Research Agent powered by Gemini 3",
     version="1.0.0",
-    lifespan=lifespan
+    lifespan=lifespan,
+    root_path=os.getenv("FASTAPI_ROOT_PATH", "")
 )
 
 # CORS for frontend
